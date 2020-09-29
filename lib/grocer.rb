@@ -12,9 +12,9 @@ end
 def consolidate_cart(cart)
   tidy_cart = []
   index = 0
-  cart.each do |item|
+  cart.each do |hash|
     binding.pry
-
+    
   end
 end
 
