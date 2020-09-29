@@ -28,4 +28,4 @@ def consolidate_cart(messy_cart)
     index += 1
   end
   tidy_cart
-  end
+end
