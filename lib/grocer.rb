@@ -14,10 +14,10 @@ def consolidate_cart(cart)
   index = 0
   cart.each do |item|
     binding.pry
-    
+
   end
 end
-  
+
   # while index < cart.length
   #   new_item = find_item_by_name_in_collection(cart[index][:item], tidy_cart)
   #   if tidy_cart.include? new_item
