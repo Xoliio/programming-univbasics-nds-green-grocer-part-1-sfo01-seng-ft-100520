@@ -18,7 +18,7 @@ def consolidate_cart(messy_cart)
       tidy_index = 0
 binding.pry
     end
-
+end
 
     end
   
