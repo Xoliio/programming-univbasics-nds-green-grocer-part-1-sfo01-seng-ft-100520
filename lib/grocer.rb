@@ -9,12 +9,14 @@ def find_item_by_name_in_collection(name, collection)
   return nil
 end
 
-def consolidate_cart(cart)
+def consolidate_cart(messy_cart)
   tidy_cart = []
-  cart_index = 0
-
-  cart.each do |hash|
-  
+  messy_index = 0
+  new_item = find_item_by_name_in_collection(messy_cart[messy_index][:item], tidy_cart)
+  messy_cart.each do |hash|
+    if hash[:item] == messy_cart[messy_index][:item]
+      binding.pry
+  end
 
   # while index < cart.length
   #   new_item = find_item_by_name_in_collection(cart[index][:item], tidy_cart)
