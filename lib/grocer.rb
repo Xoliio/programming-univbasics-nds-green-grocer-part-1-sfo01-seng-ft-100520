@@ -10,7 +10,8 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(messy_cart)
-  while index < cart.length
+  index = 0
+  while index < messy_cart.length
     new_item = find_item_by_name_in_collection(cart[index][:item], tidy_cart)
     if tidy_cart.include? new_item
       new_item[:count] += 1
