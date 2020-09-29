@@ -12,9 +12,11 @@ end
 def consolidate_cart(cart)
   tidy_cart = []
   index = 0
+  new_item = find_item_by_name_in_collection(cart[index][:item], tidy_cart)
   cart.each do |hash|
     binding.pry
-    
+    if tidy_cart !hash 
+
   end
 end
 
