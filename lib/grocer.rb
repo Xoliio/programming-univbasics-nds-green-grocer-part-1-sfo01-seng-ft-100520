@@ -13,12 +13,9 @@ def consolidate_cart(messy_cart)
   tidy_cart = []
   messy_index = 0
   new_item = find_item_by_name_in_collection(messy_cart[messy_index][:item], tidy_cart)
-  binding.pry
-
   messy_cart.each do |hash|
-    tidy_cart.each do |grocery|
-      tidy_index = 0
-    end
+    binding.pry
+
   end
 end
 
