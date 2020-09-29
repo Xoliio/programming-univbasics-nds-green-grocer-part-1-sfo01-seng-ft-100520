@@ -21,8 +21,7 @@ binding.pry
 
 
     end
-  end
-end
+  
 
   # while index < cart.length
   #   new_item = find_item_by_name_in_collection(cart[index][:item], tidy_cart)
