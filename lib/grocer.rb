@@ -11,13 +11,18 @@ end
 
 def consolidate_cart(cart)
   tidy_cart = []
-  index = 0
-  new_item = find_item_by_name_in_collection(cart[index][:item], tidy_cart)
+  cart_index = 0
+  new_item = find_item_by_name_in_collection(cart[cart_index][:item], tidy_cart)
   cart.each do |hash|
+    tidy_cart_index = 0
+    tidy_cart.each do |item_to_add|
+      if item_to_add[:item] == new_item[:item]
+        item_to_add[:count] += 1
+      end
+      tidy_cart_index +=1
+    end
     binding.pry
-
-    if tidy_cart.include? hash
-      tidy_cart[hash][:count] += 1
+  end
     else
       new_item = {
         :item => cart[index][:item],
