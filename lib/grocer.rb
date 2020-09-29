@@ -13,7 +13,7 @@ def consolidate_cart(messy_cart)
   tidy_cart = []
   messy_index = 0
   new_item = find_item_by_name_in_collection(messy_cart[messy_index][:item], tidy_cart)
-  messy_cart.each do |hash|
+  messy_cart.each do |item_hash|
     binding.pry
 
   end
